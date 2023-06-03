@@ -1,6 +1,6 @@
 # movies-explorer-api
 
-Адрес репозитория: https://github.com/alisakrasnopolina/movies-explorer-frontend
+Адрес репозитория: https://github.com/alisakrasnopolina/movies-explorer-api
 
 ## Ссылки на проект
 
