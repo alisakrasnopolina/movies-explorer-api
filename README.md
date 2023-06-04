@@ -6,6 +6,6 @@
 
 IP 158.160.51.73
 
-Frontend ...
+Frontend ... ...
 
 Backend https://api.movies-explorer.alisa.nomoredomains.rocks
