@@ -16,6 +16,8 @@ const MESSAGE_AUTHORISATION_REQUIRED = 'Необходима авторизац�
 const MESSAGE_WRONG_LINK = 'Ссылка введена некорректно.';
 const MESSAGE_EMAIL_NOT_EXISTS = 'Такого адреса электронной почты не существует.';
 const MESSAGE_WRONG_EMAIL_OR_PASSWORD = 'Неправильные почта или пароль';
+const MESSAGE_FORBIDDEN = 'Доступ запрещён.';
+const MESSAGE_SUCCESSFUL_LOGOUT = 'Вы успешно вышли.';
 
 module.exports = {
   REGEX_URL,
@@ -35,4 +37,6 @@ module.exports = {
   MESSAGE_WRONG_LINK,
   MESSAGE_EMAIL_NOT_EXISTS,
   MESSAGE_WRONG_EMAIL_OR_PASSWORD,
+  MESSAGE_FORBIDDEN,
+  MESSAGE_SUCCESSFUL_LOGOUT,
 };

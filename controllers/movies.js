@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/movie');
-const { STATUS_CREATED } = require('../utils/constants');
+const { STATUS_CREATED, MESSAGE_FORBIDDEN } = require('../utils/constants');
 
 const { DocumentNotFoundError } = mongoose.Error;
 const ForbiddenError = require('../errors/forbidden_error');
 
 module.exports.getMovies = (req, res, next) => {
-  Movie.find({})
+  Movie.find({ owner: req.user._id })
     .then((movie) => res.send(movie))
     .catch(next);
 };
@@ -58,7 +58,7 @@ module.exports.deleteMovieById = (req, res, next) => {
           .then(res.send(movie))
           .catch(next);
       } else {
-        next(new ForbiddenError('Доступ запрещён.'));
+        next(new ForbiddenError(MESSAGE_FORBIDDEN));
       }
     })
     .catch(next);

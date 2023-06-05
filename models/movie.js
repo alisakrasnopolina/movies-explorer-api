@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
-const { MESSAGE_WRONG_LINK } = require('../utils/config');
+const { MESSAGE_WRONG_LINK } = require('../utils/constants');
 
 const movieSchema = new mongoose.Schema({
   country: {
