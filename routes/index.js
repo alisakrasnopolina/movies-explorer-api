@@ -11,11 +11,13 @@ const { DocumentNotFoundError } = mongoose.Error;
 router.post('/signup', validationCreateUser, createUser);
 router.post('/signin', validationLogin, login);
 
-router.use('/users', auth, routerUsers);
+router.use(auth);
 
-router.use('/movies', auth, routerMovies);
+router.use('/users', routerUsers);
 
-router.post('/signout', auth, logout);
+router.use('/movies', routerMovies);
+
+router.post('/signout', logout);
 
 router.use('*', (req, res, next) => {
   next(new DocumentNotFoundError());
