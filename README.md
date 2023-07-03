@@ -4,8 +4,8 @@
 
 ## Ссылки на проект
 
-IP 158.160.51.73
+IP 158.160.60.203
 
-Frontend ... ...
+Frontend https://movies-explorer.alisa.nomoreparties.sbs
 
 Backend https://api.movies-explorer.alisa.nomoredomains.rocks

@@ -12,8 +12,8 @@ const limiter = require('./middlewares/rate_limiter');
 const { PORT, BIT_FILM_DB, NODE_ENV } = require('./utils/config');
 
 const allowList = [
-  'https://movies-explorer.alisa.nomoredomains.rocks',
-  'http://movies-explorer.alisa.nomoredomains.rocks',
+  'https://movies-explorer.alisa.nomoreparties.sbs',
+  'http://movies-explorer.alisa.nomoreparties.sbs',
   'https://localhost:3000',
   'http://localhost:3000',
 ];
